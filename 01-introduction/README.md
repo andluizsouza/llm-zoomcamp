@@ -49,50 +49,33 @@ Install libraries:
 make install
 ```
 
-## 1.3 Retrieval
+## 1.3 Retrieval and Search
 
-<a href="https://www.youtube.com/watch?v=olvem333Bqo&list=PL3MmuxUbc_hIB4fSqLy_0AfTjVLpgjV3R">
-  <img src="https://markdown-videos-api.jorgenkh.no/youtube/olvem333Bqo">
-</a>
+YouTube Class: [1.3 - Retrieval and Search](https://www.youtube.com/watch?v=olvem333Bqo&list=PL3MmuxUbc_hIB4fSqLy_0AfTjVLpgjV3R)
 
-* We will use the search engine we build in the [build-your-own-search-engine workshop](https://github.com/alexeygrigorev/build-your-own-search-engine): [minsearch](https://github.com/alexeygrigorev/minsearch)
-* Indexing the documents
-* Peforming the search
+- Parse FAQ documents
+    - [parse_faq.py](/01-introduction/parse_faq.py): function that reads a FAQ document from a Google Docs file and converts the questions and answers to a list of dict. 
+    - [faq_database.json](/01-introduction/faq_database.json): output of the parse FAQ documents
+- Indexing the documents
+    - [minsearch.py](/01-introduction/minsearch.py): source code of the minimal search engine
+- Performing the search
 
 
 ## 1.4 Generation with OpenAI
 
-<a href="https://www.youtube.com/watch?v=qz316T3U49Q&list=PL3MmuxUbc_hIB4fSqLy_0AfTjVLpgjV3R">
-  <img src="https://markdown-videos-api.jorgenkh.no/youtube/qz316T3U49Q">
-</a>
+YouTube Class: [ 1.4 - Generating Answers with OpenAI GPT](https://www.youtube.com/watch?v=qz316T3U49Q&list=PL3MmuxUbc_hIB4fSqLy_0AfTjVLpgjV3R&index=4)
 
 * Invoking OpenAI API
 * Building the prompt
 * Getting the answer
 
-
-If you don't want to use a service, you can run an LLM locally
-refer to [module 2](../02-open-source/) for more details.
-
-In particular, check "2.7 Ollama - Running LLMs on a CPU" - 
-it can work with OpenAI API, so to make the example from 1.4 
-work locally, you only need to change a few lines of code.
-
-
-## 1.4.2 OpenAI API Alternatives
-
-<a href="https://www.youtube.com/watch?v=HObjFso2UJE&list=PL3MmuxUbc_hIB4fSqLy_0AfTjVLpgjV3R">
-  <img src="https://markdown-videos-api.jorgenkh.no/youtube/HObjFso2UJE">
-</a>
-
-[Open AI Alternatives](open-ai-alternatives.md)
+Bonus: [OpenAI API Alternatives
+](https://github.com/DataTalksClub/llm-zoomcamp/blob/main/01-intro/open-ai-alternatives.md)
 
 
 ## 1.5 Cleaned RAG flow
 
-<a href="https://www.youtube.com/watch?v=vkTiVwwch6A&list=PL3MmuxUbc_hIB4fSqLy_0AfTjVLpgjV3R">
-  <img src="https://markdown-videos-api.jorgenkh.no/youtube/vkTiVwwch6A">
-</a>
+YouTube Class: [ 1.5 - The RAG Flow Cleaning and Modularizing Code](https://www.youtube.com/watch?v=vkTiVwwch6A&list=PL3MmuxUbc_hIB4fSqLy_0AfTjVLpgjV3R&index=6)
 
 * Cleaning the code we wrote so far
 * Making it modular
@@ -165,11 +148,3 @@ Query:
 
 We use `"type": "best_fields"`. You can read more about 
 different types of `multi_match` search in [elastic-search.md](elastic-search.md).
-
-# 1.7 Homework
-More information [here](../cohorts/2024/01-intro/homework.md).
-
-# Notes
-
-* [Notes by slavaheroes](https://github.com/slavaheroes/llm-zoomcamp/blob/homeworks/01-intro/notes.md)
-* Did you take notes? Add them above this line (Send a PR with *links* to your notes)
