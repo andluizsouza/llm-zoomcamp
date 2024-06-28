@@ -72,6 +72,36 @@ YouTube Class: [ 1.4 - Generating Answers with OpenAI GPT](https://www.youtube.c
 Bonus: [OpenAI API Alternatives
 ](https://github.com/DataTalksClub/llm-zoomcamp/blob/main/01-intro/open-ai-alternatives.md)
 
+_Personally, I have used Gemini API from Google because I don't have free credits to use the OpenAI API anymore and Google does not **yet** require an account with billing to use the Gemini API_. 
+
+Moreover, Gemini 1.5 Flash model provides a free plan, that is very interesting for study cases.
+
+***
+
+**Gemini 1.5 Flash: free of charge (in June 2024)**
+
+Rate Limits
+- 15 RPM (requests per minute)
+- 1 million TPM (tokens per minute)
+- 1,500 RPD (requests per day)
+
+Price (input)
+- Free of charge
+
+Price (output)
+- Free of charge
+
+Context caching
+- Not applicable
+
+Prompts/responses used to improve our products
+- Yes
+
+**References**
+- https://ai.google.dev/pricing 
+- https://aistudio.google.com/
+
+API keys must be **secret** and **never exposed publicly**, so here it is used as an environment variable declared in `.env` file ignored by git.
 
 ## 1.5 Cleaned RAG flow
 
@@ -80,11 +110,11 @@ YouTube Class: [ 1.5 - The RAG Flow Cleaning and Modularizing Code](https://www.
 * Cleaning the code we wrote so far
 * Making it modular
 
-## 1.6 Searching with ElasticSearch
+Code in Jupyter Notebook: [Intro_RAG.ipynb](/01-introduction/Intro_RAG.ipynb)
 
-<a href="https://www.youtube.com/watch?v=1lgbR5wMvsI&list=PL3MmuxUbc_hIB4fSqLy_0AfTjVLpgjV3R">
-  <img src="https://markdown-videos-api.jorgenkh.no/youtube/1lgbR5wMvsI">
-</a>
+## 1.6 Searching with Elastic Search
+
+YouTube Class: [1.6 - Search with Elastic Search](https://www.youtube.com/watch?v=1lgbR5wMvsI&list=PL3MmuxUbc_hIB4fSqLy_0AfTjVLpgjV3R)
 
 * Run ElasticSearch with Docker
 * Index the documents
