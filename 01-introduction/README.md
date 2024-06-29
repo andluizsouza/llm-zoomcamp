@@ -107,12 +107,12 @@ API keys must be **secret** and **never exposed publicly**, so here it is used a
 
 YouTube Class: [ 1.5 - The RAG Flow Cleaning and Modularizing Code](https://www.youtube.com/watch?v=vkTiVwwch6A&list=PL3MmuxUbc_hIB4fSqLy_0AfTjVLpgjV3R&index=6)
 
-* Cleaning the code we wrote so far
+* Cleaning the code
 * Making it modular
 
 Code in Jupyter Notebook: [Intro_RAG.ipynb](/01-introduction/Intro_RAG.ipynb)
 
-## 1.6 Searching with Elastic Search
+## 1.6 Searching with ElasticSearch
 
 YouTube Class: [1.6 - Search with Elastic Search](https://www.youtube.com/watch?v=1lgbR5wMvsI&list=PL3MmuxUbc_hIB4fSqLy_0AfTjVLpgjV3R)
 
@@ -120,7 +120,7 @@ YouTube Class: [1.6 - Search with Elastic Search](https://www.youtube.com/watch?
 * Index the documents
 * Replace MinSearch with ElasticSearch
 
-Running ElasticSearch:
+Running ElasticSearch locally:
 
 ```bash
 docker run -it \
@@ -132,49 +132,3 @@ docker run -it \
     -e "xpack.security.enabled=false" \
     docker.elastic.co/elasticsearch/elasticsearch:8.4.3
 ```
-
-Index settings:
-
-```python
-{
-    "settings": {
-        "number_of_shards": 1,
-        "number_of_replicas": 0
-    },
-    "mappings": {
-        "properties": {
-            "text": {"type": "text"},
-            "section": {"type": "text"},
-            "question": {"type": "text"},
-            "course": {"type": "keyword"} 
-        }
-    }
-}
-```
-
-Query:
-
-```python
-{
-    "size": 5,
-    "query": {
-        "bool": {
-            "must": {
-                "multi_match": {
-                    "query": query,
-                    "fields": ["question^3", "text", "section"],
-                    "type": "best_fields"
-                }
-            },
-            "filter": {
-                "term": {
-                    "course": "data-engineering-zoomcamp"
-                }
-            }
-        }
-    }
-}
-```
-
-We use `"type": "best_fields"`. You can read more about 
-different types of `multi_match` search in [elastic-search.md](elastic-search.md).
