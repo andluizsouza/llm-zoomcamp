@@ -19,6 +19,15 @@ This repository hosts my customized version of LLM Zoomcamp 2024 from DataTalks 
 - Simple RAG with Gemini model
 - Elastic Search
 
+### 2. Open-source LLMs
+
+**Module**: [02-open-source/](/02-open-source/)
+
+**Contents**
+- Getting an environment with a GPU
+- Open-source models from HuggingFace Hub
+- Running LLMs on a CPU with Ollama
+
 
 ## References
 - [LLM Zoomcamp from DataTalks Club](https://github.com/DataTalksClub/llm-zoomcamp)
