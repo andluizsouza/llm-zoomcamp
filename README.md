@@ -19,6 +19,12 @@ This repository hosts my customized version of LLM Zoomcamp 2024 from DataTalks 
 - Simple RAG with Gemini model
 - Elastic Search
 
+**Bonus**: streamlit UI for RAG
+```
+streamlit run src/app.py
+```
+
+
 ### 2. Open-source LLMs
 
 **Module**: [02-open-source/](/02-open-source/)
