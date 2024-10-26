@@ -7,11 +7,8 @@ This repository hosts my customized version of LLM Zoomcamp 2024 from DataTalks 
 
 ## Syllabus
 
-### 1. Introduction to LLM and RAG
+### 1. [Introduction to LLM and RAG](/01-introduction/)
 
-**Module**: [01-introduction/](/01-introduction/)
-
-**Contents**
 - Intro to LLMs and RAG
 - Preparing the environment
 - Retrieval and the basics of search
@@ -25,15 +22,21 @@ streamlit run src/app.py
 ```
 
 
-### 2. Open-source LLMs
+### 2. [Open-source LLMs](/02-open-source/)
 
-**Module**: [02-open-source/](/02-open-source/)
-
-**Contents**
 - Getting an environment with a GPU
 - Open-source models from HuggingFace Hub
 - Running LLMs on a CPU with Ollama
 
 
+### 3. [Vector Search](/03-vector-search/)
+
+
+- Introduction to Vector Search
+- Creating and indexing embeddings
+- Vector search with Elastic Search
+- Offline evaluation of retrieval
+
 ## References
 - [LLM Zoomcamp from DataTalks Club](https://github.com/DataTalksClub/llm-zoomcamp)
+
